@@ -37,6 +37,8 @@ public class Main {
                 case "-alg":
                     algorithm = Algorithm.valueOf(args[i + 1].toUpperCase());
                     break;
+                default:
+                    break;
             }
         }
 
@@ -79,7 +81,7 @@ enum Mode {
 
     private final int value;
 
-    private Mode(int value) {
+     Mode(int value) {
         this.value = value;
     }
 
